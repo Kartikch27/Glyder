@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GLYDER - Modern E-commerce Platform
 
-## Getting Started
+GLYDER is a high-performance, scalable e-commerce platform built with the latest web technologies. This project is designed for modern urban mobility brands, starting with premium electric scooters.
 
-First, run the development server:
+## 🚀 Tech Stack
 
+- **Framework:** [Next.js 15 (App Router)](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Database & Auth:** [Supabase](https://supabase.com/) (Integration placeholders)
+- **Payments:** [Stripe](https://stripe.com/) (Integration placeholders)
+
+## 📁 Folder Structure
+
+The project follows a scalable and organized folder structure:
+
+- `src/app`: Next.js App Router pages and layouts.
+- `src/components`: UI components organized by feature and commonality.
+  - `common`: Global components like Navbar and Footer.
+  - `ui`: Base shadcn/ui components.
+  - `home`, `shop`, etc.: Feature-specific components.
+- `src/lib`: Utility functions and third-party SDK initializations (Supabase, Stripe).
+- `src/hooks`: Custom React hooks for shared logic.
+- `src/types`: TypeScript definitions and interfaces.
+- `src/store`: State management (e.g., Cart state).
+- `src/services`: API calling logic and data fetching.
+- `src/constants`: Static values and configuration.
+
+## 🛠️ Getting Started (For Beginners)
+
+Follow these exact steps to run the project on your local machine:
+
+### 1. Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed (v18.0 or higher recommended).
+
+### 2. Install Dependencies
+Open your terminal in the project folder and run:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Set Up Environment Variables
+Copy the example environment file to create your own:
+```bash
+cp .env.example .env.local
+```
+*(Note: You can fill in the values later when you set up Supabase and Stripe)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Run the Development Server
+Start the local server by running:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. View the App
+Open your browser and go to:
+[http://localhost:3000](http://localhost:3000)
 
-## Learn More
+## 🏗️ Phase 1 Progress
+- [x] Clean scalable folder structure
+- [x] Basic layout (Navbar, Footer)
+- [x] Shared UI components (shadcn/ui)
+- [x] Placeholder pages (Home, Shop, Product, Cart, etc.)
+- [x] Supabase & Stripe integration placeholders
+- [x] Comprehensive README
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+This project is private and for educational purposes.
